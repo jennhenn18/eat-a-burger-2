@@ -1,0 +1,11 @@
+{{!-- create partial for the devour it button --}}
+
+{{!-- show burger name --}}
+<li id='{{burger_name}}'>{{burger_name}}
+
+{{!-- create devour it button --}}
+<button class='devour-it' id='{{id}}' data-devourit='{{devoured}}'>
+    {{#if devoured}}Devour it!{{/if}}
+</button>
+</li>
+

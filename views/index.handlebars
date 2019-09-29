@@ -1,0 +1,42 @@
+{{!-- display for burger input --}}
+<form class="create-form title">
+
+    <div class='form-group'>
+        <input type="text" id="burgerName" name="name" placeholder='Order here!'>
+    
+    <button type="submit" id='order'>Place order</button>
+    </div>
+</form>
+
+<div>
+    {{!-- display burgers that have devoured set to false --}}
+
+    <div id='ordered'>
+        <h3>Ordered!</h3>
+        <ol>
+        {{#each burgers}}
+        {{!-- if devoured is set to false --}}
+            {{#unless devoured}}
+            {{!-- import partial for devoured it button --}}
+            {{!-- show burger name --}}
+            <li id='{{burger_name}}'>{{burger_name}}
+                <button class='devour-it' id='{{this.id}}' data-devourit='{{devoured}}'>Eat Burger!</button>
+            </li>
+            {{/unless}}
+        {{/each}}
+        </ol>
+    </div>
+
+
+    {{!-- display for burgers where devoures is set to true --}}
+
+    <div id='gone'>
+        <h3>Gone!</h3>
+        {{#each burgers}}
+        {{!-- if devoured is set to true --}}
+            {{#if devoured}}
+                <li id='{{burger_name}}'>{{burger_name}}</li>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>

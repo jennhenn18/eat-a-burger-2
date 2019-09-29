@@ -1,0 +1,50 @@
+body {
+    padding: 0px;
+    margin: auto;
+}
+
+.title {
+    margin: 1% 30% 2% 30%;
+}
+
+.create-form {
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    margin-left: 30%;
+    background: lightgray;
+}
+
+.form-group {
+    padding: 1% 15%;
+}
+
+#burgerName {
+    width: 400px;
+    height: 100px;
+}
+
+#order {
+    background: green;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+#ordered {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    float: left;
+    margin-left: 30%;
+    padding: 1%;
+}
+
+#gone {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    float: right;
+    margin-right: 38%;
+    padding: 1%;
+}
