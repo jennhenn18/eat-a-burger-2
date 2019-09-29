@@ -1,5 +1,5 @@
 
-USE p46xmx69jzykjy4w;
+USE y4l1r62xag3ydn3t;
 
 CREATE TABLE burgers(
     id INT NOT NULL AUTO_INCREMENT,
