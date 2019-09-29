@@ -1,4 +1,3 @@
-
 USE y4l1r62xag3ydn3t;
 
 CREATE TABLE burgers(
